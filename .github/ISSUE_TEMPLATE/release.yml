@@ -3,6 +3,12 @@ description: Please use this template to prepare for your prod release, make sur
 title: "[Release]: "
 labels: ["release"]
 body:
+
+  - type: markdown
+    attributes:
+      value: |
+        # RELEASE DETAILS
+
   - type: input
     id: change-request-link
     attributes:
@@ -10,7 +16,23 @@ body:
       description: Please add link to the release-steps Word document
     validations:
       required: false
- 
+
+  - type: input
+    id: release-number
+    attributes:
+      label: 🏷️ Release Number
+      description: Please provide the UAT release number that will be deployed to PROD.
+    validations:
+      required: true
+
+  - type: input
+    id: rollback-number
+    attributes:
+      label: 🔙 Rollback Number
+      description: Please provide the previous successful PROD release number that will be used for rollback.
+    validations:
+      required: true
+  
   - type: textarea
     id: dataproduct-names
     attributes:
@@ -198,27 +220,6 @@ body:
     attributes:
       label: Additional Notes
       placeholder: Please add any additional notes here.
-
-  - type: markdown
-    attributes:
-      value: |
-        # RELEASE DETAILS
-
-  - type: input
-    id: release-number
-    attributes:
-      label: 🏷️ Release Number
-      description: Please provide the UAT release number that will be deployed to PROD.
-    validations:
-      required: true
-
-  - type: input
-    id: rollback-number
-    attributes:
-      label: 🔙 Rollback Number
-      description: Please provide the previous successful PROD release number that will be used for rollback.
-    validations:
-      required: true
 
   - type: markdown
     attributes:
