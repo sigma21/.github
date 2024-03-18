@@ -1,4 +1,4 @@
-name: Release Template
+name: 🚀 Release Template
 description: Create a new release issue, please add the planned release date to the title.
 title: "[Release]: "
 labels: ["release"]
@@ -12,7 +12,7 @@ body:
     id: change-request-link
     attributes:
       label: Change Request Link
-      description: Please add link to the change request document
+      description: "Please add link to the change request document."
     validations:
       required: false
       
@@ -20,7 +20,7 @@ body:
     id: dataproduct-names
     attributes:
       label: Which data products will be deployed to PROD durig this release?
-      description: Please add dataproduct names line by line.
+      description: "Please add dataproduct names line by line."
       placeholder: |
       - [ ] dataproduct X
       - [ ] dataproduct Y
@@ -31,13 +31,13 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## UAM Changes
+        "## UAM Changes"
   
   - type: textarea
     id: uam-tables
     attributes:
       label: Do you need to update UAM tables?
-      description: If so, please add the tables that needs to be added/updated.
+      description: "If so, please add the tables that needs to be added/updated."
       placeholder: |
       - [ ] Table a to be added to group_a_tables list.
       - [ ] Table b to be added to group_b_tables list.
@@ -48,7 +48,7 @@ body:
     id: uam-users
     attributes:
       label: Do you need to update UAM user groups in Terraform prd env. vars?
-      description: If so, please add the user emails.
+      description: "If so, please add the user emails."
       placeholder: |
       - [ ] Add user_a@x.com to A_users_group.
       - [ ] Add user_b@x.com to B_users_group.
@@ -59,7 +59,7 @@ body:
     id: uam-spn
     attributes:
       label: Do you need to add an SPN?
-      description: If so, please make notes for necessary steps.
+      description: "If so, please make notes for necessary steps."
       placeholder: |
       - [ ] Create keyvault secret for SPN.
       - [ ] Add SPN to team_x group.
@@ -69,13 +69,13 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## DLT Changes
+        "## DLT Changes"
       
   - type: textarea
     id: dlt-config
     attributes:
       label: Do you need to update/create a DLT config for this release?
-      description: If so, please add the config file names that needs to be updated or created separately for the prod env.
+      description: "If so, please add the config file names that needs to be updated or created separately for the prod env."
       placeholder: |
       - [ ] Update DLT config of pipeline_a with ... settings.
       - [ ] Create a separate prod DLT config for pipeline_b with ... settings.
@@ -86,7 +86,7 @@ body:
     id: dlt-notebook
     attributes:
       label: Do you need to update/create a DLT notebook for this release?
-      description: If so, please add the config file names that needs to be updated or created separately for the prod env.
+      description: "If so, please add the notebook file names that needs to be updated or created separately for the prod env."
       placeholder: |
       - [ ] Update DLT notebook of pipeline_a with ... settings.
       - [ ] Create a separate prod DLT notebook for pipeline_b with ... settings.
@@ -97,7 +97,7 @@ body:
     id: dlt-api
     attributes:
       label: Do you need to update/create a DLT API call notebook for this release?
-      description: If so, please add the config file names that needs to be updated or created separately for the prod env.
+      description: "If so, please add the API notebook file names that needs to be updated or created separately for the prod env."
       placeholder: |
       - [ ] Update DLT API call notebook of pipeline_a with ... settings.
       - [ ] Create a separate prod DLT API call notebook for pipeline_b with ... settings.
@@ -108,7 +108,7 @@ body:
     id: dlt-tf-changes
     attributes:
       label: Do you need to update/create any DLT job config in terraform prod env. vars?
-      description: If so, make a note for yourself.
+      description: "If so, make a note for yourself."
       placeholder: |
       - [ ] Update "pipeline_a" DLT config to reflect updated schedule.
       - [ ] Add "pipeline_b" to DLT job config.
@@ -118,13 +118,13 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## Reference File Changes
+        "## Reference File Changes"
 
   - type: textarea
     id: ref-files
     attributes:
       label: Do you need to update/create a reference/mapping file in prod blob storage?
-      description: If so, please add the file names that needs to be added to the prod blob storage.
+      description: "If so, please add the file names that needs to be added to the prod blob storage."
       placeholder: |
       - [ ] Add mapping csv A 
       - [ ] Add ref csv file B
@@ -134,13 +134,13 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## ADF Changes
+        "## ADF Changes"
 
   - type: textarea
     id: adf-config
     attributes:
       label: Do you need to update/create any ADF pipeline config for this release?
-      description: If so, please add the pipeline config .json file(s) that needs to be added to the resources/adf/prd dir.
+      description: "If so, please add the pipeline config .json file(s) that needs to be added to the resources/adf/prd dir."
       placeholder: |
       - [ ] Add pipeline_a .json config.
     validations:
@@ -150,7 +150,7 @@ body:
     id: adf-tf-changes
     attributes:
       label: Do you need to update/create any terraform resource block to reflect your ADF changes?
-      description: If so, make a note for yourself.
+      description: "If so, make a note for yourself."
       placeholder: |
       - [ ] Update "azurerm_data_factory_pipeline" "datalab_adf_xyz_pipelines" resource block.
       - [ ] Add "azurerm_data_factory_trigger_schedule" "xyz_trigger" resource block.
@@ -160,7 +160,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## Azure DevOps Changes
+        "## Azure DevOps Changes"
 
   - type: textarea
     id: azure-devops-changes
