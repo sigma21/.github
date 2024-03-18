@@ -27,9 +27,9 @@ body:
       required: true
 
   - type: textarea
-    id: what-happened
+    id: dataproduct-names
     attributes:
-      label: "What happened?"
+      label: Please add dataproduct names line by line.
       description: "Also tell us, what did you expect to happen?"
       placeholder: "- [ ] Tell us what you see!"
       # value: "A bug happened!"
