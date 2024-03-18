@@ -1,4 +1,4 @@
-name: vcbcb
+name: 🚀 Release Template
 description: Please use this template to prepare for your prod release, make sure to add the planned release date to the title.
 title: "[Release]: "
 labels: ["release"]
@@ -7,7 +7,7 @@ body:
     id: change-request-link
     attributes:
       label: 📜 Change Request Link
-      description: Please add link to the release-steps Word document
+      description: Please add link to the change request document
     validations:
       required: false    
  
@@ -22,12 +22,12 @@ body:
         - [ ] dataproduct Z
     validations:
       required: true
-  
+
   - type: markdown
     attributes:
       value: |
-        # PRE-RELEASE STEPS
-
+        # RELEASE PHASE
+        
   - type: markdown
     attributes:
       value: |
