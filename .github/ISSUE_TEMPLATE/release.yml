@@ -7,7 +7,7 @@ body:
     id: change-request-link
     attributes:
       label: 📜 Change Request Link
-      description: Please add link to the change request document
+      description: Please add link to the release-steps Word document
     validations:
       required: false    
  
@@ -22,6 +22,11 @@ body:
         - [ ] dataproduct Z
     validations:
       required: true
+  
+  - type: markdown
+    attributes:
+      value: |
+        # PRE-RELEASE STEPS
 
   - type: markdown
     attributes:
@@ -193,3 +198,42 @@ body:
     attributes:
       label: Additional Notes
       placeholder: Please add any additional notes here.
+
+  - type: markdown
+    attributes:
+      value: |
+        # RELEASE PHASE
+
+  - type: input
+    id: release-number
+    attributes:
+      label: 🏷️ UAT Release Number
+      description: Please provide the UAT release number that will be deployed to PROD.
+    validations:
+      required: true
+
+  - type: input
+    id: rollback-number
+    attributes:
+      label: 🔙 PROD Rollback Number
+      description: Please provide the prevoius successful PROD release number that will be used for rollback.
+    validations:
+      required: true
+    
+
+  - type: markdown
+    attributes:
+      value: |
+        # POST-RELEASE STEPS
+
+ - type: textarea
+    id: release-steps
+    attributes:
+      label: Write down all the steps that needs to be taken during the prod release
+      description: Use - [ ] to add each step as a check-box.
+      placeholder: |
+        - [ ] Run DLT workflow for pipeline_a.
+        - [ ] Check table A.
+        - [ ] Do data reconciliation.
+    validations:
+      required: false
