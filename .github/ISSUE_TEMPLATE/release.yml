@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
-  
+
   - type: input
     id: change-request-link
     attributes:
@@ -16,17 +16,17 @@ body:
     validations:
       required: false
       
-  - type: textarea
-    id: dataproduct-names
-    attributes:
-      label: Which data products will be deployed to PROD durig this release?
-      description: "Please add dataproduct names line by line."
-      placeholder: |
-      - [ ] dataproduct X
-      - [ ] dataproduct Y
-      - [ ] dataproduct Z
-    validations:
-      required: true
+  # - type: textarea
+  #   id: dataproduct-names
+  #   attributes:
+  #     label: Which data products will be deployed to PROD durig this release?
+  #     description: "Please add dataproduct names line by line."
+  #     placeholder: |
+  #     - [ ] dataproduct X
+  #     - [ ] dataproduct Y
+  #     - [ ] dataproduct Z
+  #   validations:
+  #     required: true
 
   - type: markdown
     attributes:
