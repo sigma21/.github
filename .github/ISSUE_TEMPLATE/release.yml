@@ -3,6 +3,7 @@ description: Please use this template to prepare for your prod release, make sur
 title: "[Release]: "
 labels: ["release"]
 body:
+
   - type: input
     id: change-request-link
     attributes:
