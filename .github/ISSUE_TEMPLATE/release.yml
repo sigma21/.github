@@ -134,7 +134,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## ADF Changes
+        ## 🏭 ADF Changes
 
   - type: textarea
     id: adf-config
@@ -175,7 +175,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## Backfill
+        ## 🔋 Backfill
 
   - type: textarea
     id: backfill
