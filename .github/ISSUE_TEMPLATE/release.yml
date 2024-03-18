@@ -230,10 +230,18 @@ body:
     id: release-steps
     attributes:
       label: Write down all the steps that needs to be taken during the prod release
-      description: Use - [ ] to add each step as a check-box.
+      description: Begin each line with - [ ] to add steps as a check-boxes.
       placeholder: |
         - [ ] Run DLT workflow for pipeline_a.
         - [ ] Check table A.
         - [ ] Do data reconciliation.
     validations:
       required: false
+
+  - type: textarea
+    id: sql
+    attributes:
+      label: Relevant SQL Queries 
+      description: Please copy and paste any relevant SQL queries that would be used as part of regression tests. This will be automatically formatted into code, so no need for backticks.
+      render: SQL
+
