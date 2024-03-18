@@ -9,7 +9,12 @@ body:
       label: 📜 Change Request Link
       description: Please add link to the release-steps Word document
     validations:
-      required: false    
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        # PRE-RELEASE STEPS
  
   - type: textarea
     id: dataproduct-names
