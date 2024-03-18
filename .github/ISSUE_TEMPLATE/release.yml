@@ -188,13 +188,8 @@ body:
     validations:
       required: false
 
-  - type: markdown
-    attributes:
-      value: |
-        ## Notes
-
   - type: textarea
     id: notes
     attributes:
       label: Additional Notes
-      placeholder: Pl ease add any additional notes here.
+      placeholder: Please add any additional notes here.
