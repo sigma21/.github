@@ -7,7 +7,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        # RELEASE DETAILS
+        # Release Details
 
   - type: input
     id: change-request-link
@@ -36,7 +36,7 @@ body:
   - type: textarea
     id: dataproduct-names
     attributes:
-      label: Which data products will be deployed to PROD during this release?
+      label: 📊 Which data products will be deployed to PROD during this release?
       description: Please add dataproduct names line by line.
       placeholder: |
         - [ ] dataproduct X
@@ -48,7 +48,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        # PRE-RELEASE STEPS
+        # Pre-Release Steps
         
   - type: markdown
     attributes:
@@ -58,7 +58,7 @@ body:
   - type: textarea
     id: uam-tables
     attributes:
-      label: Do you need to update UAM tables?
+      label: 🔒 Do you need to update UAM tables?
       description: If so, please add the tables that needs to be added/updated.
       placeholder: |
         - [ ] Table a to be added to group_a_tables list.
@@ -69,7 +69,7 @@ body:
   - type: textarea
     id: uam-users
     attributes:
-      label: Do you need to update UAM user groups in Terraform prd env. vars?
+      label: 🔒 Do you need to update UAM user groups in Terraform prd env. vars?
       description: If so, please add the user emails.
       placeholder: |
         - [ ] Add user_a@x.com to A_users_group.
@@ -80,7 +80,7 @@ body:
   - type: textarea
     id: uam-spn
     attributes:
-      label: Do you need to add an SPN?
+      label: 🔒 Do you need to add an SPN?
       description: If so, please make notes for necessary steps.
       placeholder: |
         - [ ] Create keyvault secret for SPN.
@@ -96,7 +96,7 @@ body:
   - type: textarea
     id: dlt-config
     attributes:
-      label: Do you need to update/create a DLT config for this release?
+      label: ⚡️ Do you need to update/create a DLT config for this release?
       description: If so, please add the config file names that needs to be updated or created separately for the prod env.
       placeholder: |
         - [ ] Update DLT config of pipeline_a with ... settings.
@@ -107,7 +107,7 @@ body:
   - type: textarea
     id: dlt-notebook
     attributes:
-      label: Do you need to update/create a DLT notebook for this release?
+      label: ⚡️ Do you need to update/create a DLT notebook for this release?
       description: If so, please add the config file names that needs to be updated or created separately for the prod env.
       placeholder: |
         - [ ] Update DLT notebook of pipeline_a with ... settings.
@@ -118,7 +118,7 @@ body:
   - type: textarea
     id: dlt-api
     attributes:
-      label: Do you need to update/create a DLT API call notebook for this release?
+      label: ⚡️ Do you need to update/create a DLT API call notebook for this release?
       description: If so, please add the config file names that needs to be updated or created separately for the prod env.
       placeholder: |
         - [ ] Update DLT API call notebook of pipeline_a with ... settings.
@@ -129,7 +129,7 @@ body:
   - type: textarea
     id: dlt-tf-changes
     attributes:
-      label: Do you need to update/create any DLT job config in terraform prod env. vars?
+      label: ⚡️ Do you need to update/create any DLT job config in terraform prod env. vars?
       description: If so, make a note for yourself.
       placeholder: |
         - [ ] Update "pipeline_a" DLT config to reflect updated schedule.
@@ -145,7 +145,7 @@ body:
   - type: textarea
     id: ref-files
     attributes:
-      label: Do you need to update/create a reference/mapping file in prod blob storage?
+      label: 🗂️ Do you need to update/create a reference/mapping file in prod blob storage?
       description: If so, please add the file names that needs to be added to the prod blob storage.
       placeholder: |
         - [ ] Add mapping csv A 
@@ -161,7 +161,7 @@ body:
   - type: textarea
     id: adf-config
     attributes:
-      label: Do you need to update/create any ADF pipeline config for this release?
+      label: 🏭 Do you need to update/create any ADF pipeline config for this release?
       description: If so, please add the pipeline config .json file(s) that needs to be added to the resources/adf/prd dir.
       placeholder: |
         - [ ] Add pipeline_a .json config.
@@ -171,7 +171,7 @@ body:
   - type: textarea
     id: adf-tf-changes
     attributes:
-      label: Do you need to update/create any terraform resource block to reflect your ADF changes?
+      label: 🏭 Do you need to update/create any terraform resource block to reflect your ADF changes?
       description: If so, make a note for yourself.
       placeholder: |
         - [ ] Update "azurerm_data_factory_pipeline" "datalab_adf_xyz_pipelines" resource block.
@@ -187,7 +187,7 @@ body:
   - type: textarea
     id: azure-devops-changes
     attributes:
-      label: Do you need to update/create any secrets in Azure DevOps?
+      label: 🔁 Do you need to update/create any secrets in Azure DevOps?
       description: If so, make a note for yourself.
       placeholder: |
         - [ ] Add secret for pipeline_a.
@@ -202,7 +202,7 @@ body:
   - type: textarea
     id: backfill
     attributes:
-      label: Do you need to do any backfilling for this release?
+      label: 🔋 Do you need to do any backfilling for this release?
       description: If so, make a note for yourself.
       placeholder: |
         - [ ] Run backfill for pipeline_a.
@@ -218,18 +218,18 @@ body:
   - type: textarea
     id: notes
     attributes:
-      label: Additional Notes
+      label: 📝 Additional Notes
       placeholder: Please add any additional notes here.
 
   - type: markdown
     attributes:
       value: |
-        # POST-RELEASE STEPS
+        # Post-Release Steps
   
   - type: textarea
     id: release-steps
     attributes:
-      label: Write down all the steps that needs to be taken during the prod release
+      label: 📋 Write down all the steps that needs to be taken during the prod release
       description: Begin each line with - [ ] to add steps as a check-boxes.
       placeholder: |
         - [ ] Run DLT workflow for pipeline_a.
@@ -241,7 +241,7 @@ body:
   - type: textarea
     id: sql
     attributes:
-      label: Relevant SQL Queries 
+      label: 💻 Relevant SQL Queries 
       description: Please copy and paste any relevant SQL queries that would be used as part of regression tests. This will be automatically formatted into code, so no need for backticks.
       render: SQL
 
