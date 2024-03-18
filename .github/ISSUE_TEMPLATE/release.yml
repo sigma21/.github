@@ -1,9 +1,8 @@
-name: 🚀 Release Template
+name: "🚀 Release Template"
 description: Please use this template to prepare for your prod release, make sure to add the planned release date to the title.
 title: "[Release]: "
 labels: ["release"]
 body:
-
   - type: input
     id: change-request-link
     attributes:
