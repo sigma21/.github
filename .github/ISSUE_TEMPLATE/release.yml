@@ -175,6 +175,7 @@ body:
   - type: markdown
     attributes:
       value: |
+        ## 
         ## Backfill
 
   - type: textarea
@@ -187,11 +188,6 @@ body:
         - [ ] Copy X container from UAT to PROD.
     validations:
       required: false
-
-  - type: markdown
-    attributes:
-      value: |
-        "\"
 
 
   - type: textarea
