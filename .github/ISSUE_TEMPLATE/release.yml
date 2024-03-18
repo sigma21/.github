@@ -29,8 +29,8 @@ body:
   - type: textarea
     id: dataproduct-names
     attributes:
-      label: Which data products will be deployed to PROD durig this release?
-      description: Please add dataproduct names line by line.
+      label: "Which data products will be deployed to PROD durig this release?"
+      description: "Please add dataproduct names line by line."
       placeholder: |
       - [ ] dataproduct X
       - [ ] dataproduct Y
