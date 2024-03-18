@@ -11,7 +11,7 @@ body:
   - type: input
     id: change-request-link
     attributes:
-      label: Change Request Link
+      label: 📜 Change Request Link
       description: Please add link to the change request document
     validations:
       required: false    
@@ -31,7 +31,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## UAM Changes
+        ## 🔒 UAM Changes
   
   - type: textarea
     id: uam-tables
@@ -69,7 +69,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## DLT Changes
+        ## ⚡️ DLT Changes
       
   - type: textarea
     id: dlt-config
@@ -118,7 +118,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## Reference File Changes
+        ## 🗂️ Reference File Changes
 
   - type: textarea
     id: ref-files
@@ -160,7 +160,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## Azure DevOps Changes
+        ## 🔁 Azure DevOps Changes
 
   - type: textarea
     id: azure-devops-changes
