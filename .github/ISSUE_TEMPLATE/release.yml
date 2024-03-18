@@ -10,11 +10,6 @@ body:
       description: Please add link to the release-steps Word document
     validations:
       required: false
-
-  - type: markdown
-    attributes:
-      value: |
-        # PRE-RELEASE STEPS
  
   - type: textarea
     id: dataproduct-names
@@ -28,6 +23,11 @@ body:
     validations:
       required: true
 
+  - type: markdown
+    attributes:
+      value: |
+        # PRE-RELEASE STEPS
+        
   - type: markdown
     attributes:
       value: |
@@ -198,3 +198,24 @@ body:
     attributes:
       label: Additional Notes
       placeholder: Please add any additional notes here.
+
+  - type: markdown
+    attributes:
+      value: |
+        # PRE-RELEASE STEPS
+
+  - type: input
+    id: release-number
+    attributes:
+      label: 🏷️ UAT Release Number
+      description: Please provide the UAT release number that will be deployed to PROD.
+    validations:
+      required: true
+
+  - type: input
+    id: rollback-number
+    attributes:
+      label: 🔙 PROD Rollback Number
+      description: Please provide the prevoius successful PROD release number that will be used for rollback.
+    validations:
+      required: true
